@@ -1,0 +1,25 @@
+{
+  "name": "ci-cd-qa-demo",
+  "version": "1.0.0",
+  "description": "Repo do nauki/prezentacji CI/CD",
+  "main": "index.js",
+  "scripts": {
+    "lint": "biome check --reporter=summary .",
+    "format": "biome format --write ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JKoczot/ci-cd-qa-demo.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JKoczot/ci-cd-qa-demo/issues"
+  },
+  "homepage": "https://github.com/JKoczot/ci-cd-qa-demo#readme",
+  "devDependencies": {
+    "@biomejs/biome": "^2.2.7",
+    "typescript": "^5.9.3"
+  }
+}
