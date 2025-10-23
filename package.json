@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "lint": "biome check --reporter=summary .",
-    "format": "biome format --write ."
+    "format": "biome format --write .",
+    "typecheck": "tsc --noEmit"
   },
   "repository": {
     "type": "git",
