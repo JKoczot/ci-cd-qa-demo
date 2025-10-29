@@ -4,9 +4,15 @@
   "description": "Repo do nauki/prezentacji CI/CD",
   "main": "index.js",
   "scripts": {
+    "prepare": "npx simple-git-hooks",
     "lint": "biome check --reporter=summary .",
     "format": "biome format --write .",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "build": "tsc"
+  },
+  "simple-git-hooks": {
+    "pre-commit": "npm run format && npm run lint",
+    "pre-push": "npm run lint && npm run typecheck"
   },
   "repository": {
     "type": "git",
@@ -21,6 +27,7 @@
   "homepage": "https://github.com/JKoczot/ci-cd-qa-demo#readme",
   "devDependencies": {
     "@biomejs/biome": "^2.2.7",
+    "simple-git-hooks": "^2.13.1",
     "typescript": "^5.9.3"
   }
 }
